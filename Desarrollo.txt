@@ -3,7 +3,7 @@ Asunto: CEPSUNI - SQL Server | - Practica ##
 
 
 
-SEMANA 01
+SEMANA 01 - 31.01.2021
 =============================================
 1.- Repositorio Git
 2.- Introducción a SQL Server
