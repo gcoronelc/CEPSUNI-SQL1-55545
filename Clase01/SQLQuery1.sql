@@ -23,3 +23,11 @@ go
 
 sp_helpdb edutec;
 go
+
+
+select * from edutec.dbo.matricula;
+go
+
+
+
+
