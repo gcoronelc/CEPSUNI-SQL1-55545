@@ -1,5 +1,5 @@
 Correo: egcc.uni@gmail.com
-Asunto: CEPSUNI - SQL Server | - Tarea 01
+Asunto: CEPSUNI - SQL Server | - Practica ##
 
 
 
@@ -10,15 +10,6 @@ SEMANA 01
 2.- Creación de BD
 
 
-
-
-
-Tarea 01: 13.SET.2020
--------------------------------
-- Lab 1
-- Lab 2
-- Video de 5 max por lab, youtube.
-  (Solo el link en youtube)
 
 
 
