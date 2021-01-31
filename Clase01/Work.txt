@@ -1,0 +1,10 @@
+-- ======================================================
+-- Software
+-- ======================================================
+
+- SQL Server 2019 - Desarrollo
+- SQL Server Management Studio - SSMS
+- NotePad++
+- AnyDesk (Soporte remoto)
+
+
