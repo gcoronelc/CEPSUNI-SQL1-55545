@@ -1,0 +1,18 @@
+
+
+Restricción 05
+-------------------------------------
+
+Descripción:
+
+El stock del producto no debe permitir valores negativos.
+
+
+Sustento
+-----------------------------------------------------------
+El stock de un producto no puede ser negativo, esto es en general.
+Por politicas de la empresa, no es posible realizar ventas 
+de prosucto con stock 0 o negativo.
+
+
+
