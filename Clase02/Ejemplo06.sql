@@ -36,7 +36,7 @@ values(501,'Producto 2', 900.0, 2100.0, 230 );
 go
 
 insert into demo01.dbo.articulo(idArticulo,nombre,pre_costo,pre_venta,stock)
-values(502,'Producto 3', 800.0, 197000.0, 60 );
+values(502,'Producto 3', 800.0, 1970.0, 60 );
 go
 
 SET IDENTITY_INSERT dbo.articulo ON;
@@ -101,7 +101,27 @@ go
 select * from DEMO01.dbo.venta;
 go
 
+-- Actualizar el stock
 
+select * from dbo.articulo;
+select * from DEMO01.dbo.venta;
+go
+
+with 
+v_cantidad as (
+	select idArticulo, sum(cantidad) cant 
+	from dbo.venta
+	group by idArticulo
+)
+UPDATE dbo.articulo 
+SET stock = stock - v.cant 
+FROM dbo.articulo a
+JOIN v_cantidad v on a.idArticulo = v.idArticulo;
+go
+
+select * from dbo.articulo;
+select * from DEMO01.dbo.venta;
+go
 
 
 
