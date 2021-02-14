@@ -24,7 +24,7 @@ GO
 -- EJERCICIO 7:
 -- De Huayanay, Fabiola para todos:  11:10 AM
 
-SELECT * FROM EduTec..ProfesorGOSELECT IdProfesor,CONCAT(ApeProfesor, NomProfesor) "NOMBRE COMPLETO"FROM EduTec..ProfesorGO
+SELECT * FROM EduTec..ProfesorGOSELECT 	IdProfesor,	CONCAT(ApeProfesor, NomProfesor) "NOMBRE COMPLETO"FROM EduTec..ProfesorGO
 
 -- Ejercicio 8
 
@@ -37,6 +37,12 @@ select
 	'Falta' "Vacantes"
 from edutec.dbo.CursoProgramado;
 go
+
+-- De Ivan Guerra para todos:  11:22 AM
+
+SELECT * FROM EDUTEC.DBO.CursoProgramadoGOSELECT 	IdCURSOPROG "codigo", 	CONCAT(idciclo, '/' ,idcurso) "curso", 	CONCAT(matriculados, '/' , matriculados + vacantes) vacantesFROM EDUTEC.DBO.CursoProgramado;
+go
+
 
 
 
