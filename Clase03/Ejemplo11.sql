@@ -21,6 +21,24 @@ FROM RH..empleado;
 GO
 
 
+-- EJERCICIO 7:
+-- De Huayanay, Fabiola para todos:  11:10 AM
+
+SELECT * FROM EduTec..ProfesorGOSELECT IdProfesor,CONCAT(ApeProfesor, NomProfesor) "NOMBRE COMPLETO"FROM EduTec..ProfesorGO
+
+-- Ejercicio 8
+
+select * from edutec.dbo.CursoProgramado;
+go
+
+select 
+	IdCursoProg,
+	'Falta' "Curso",
+	'Falta' "Vacantes"
+from edutec.dbo.CursoProgramado;
+go
+
+
 
 
 
