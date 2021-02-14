@@ -31,6 +31,36 @@ SELECT
 FROM EDUCA.DBO.CURSO;
 GO
 
+-- Ejemplo 4
+
+
+
+-- Ejemplo 5
+
+-- De Alexander Gracey para todos:  10:50 AM
+
+SELECT nombre, apellido, sueldo, sueldo*1.2 "Incremento" 	FROM RH.dbo.empleado;
+go
+
+-- De Ivan Guerra para todos:  10:52 AM
+
+SELECT * FROM RH.DBO.empleado;
+GO
+
+SELECT
+	IDEMPLEADO, APELLIDO, SUELDO, 
+	SUELDO * 1.2 "INCREMENTO DE SUELDO"
+FROM RH.DBO.empleado;
+GO
+
+
+
+
+
+
+
+
+
 
 
 
