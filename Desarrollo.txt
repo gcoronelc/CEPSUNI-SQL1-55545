@@ -20,7 +20,7 @@ SEMANA 03 - 14.02.2021
 =============================================
 1.- Creación de BD
 2.- Creación de restricciones
-2.- Carga de datos para probar restricciones 
+2.- Consultas básicas 
 
 
 
