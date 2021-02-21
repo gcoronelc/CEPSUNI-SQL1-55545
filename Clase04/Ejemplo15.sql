@@ -87,3 +87,36 @@ GO
 select * from rh.dbo.empleado
 where idcargo like 'C0[12]' OR idcargo = 'C12';
 GO
+
+-- Problema 11
+/*
+Desarrollar una sentencia SELECT que permita averiguar los cursos que aún no tienen
+alumnos matriculados. Base de datos EDUCA.
+*/
+
+select * 
+from EDUCA..CURSO
+where cur_matriculados = 0;
+go
+
+
+-- Problema 12
+/*
+Desarrollar una sentencia SELECT para consultar los empleados de contabilidad cuyo sueldo
+es mayor a 10,000.00. Base de datos RH.
+*/
+
+select*
+from rh.dbo.empleado
+where iddepartamento= 101 and sueldo>10000.00;
+go
+
+
+-- Problema 13
+/*
+Desarrollar una sentencia SELECT que permita averiguar los cursos que aún no tienen
+profesor. Base de datos EDUCA.
+*/
+
+
+
