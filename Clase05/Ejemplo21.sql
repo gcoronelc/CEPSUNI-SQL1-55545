@@ -35,6 +35,14 @@ go
 -- Problema 3
 select C.cur_nombre, sum(P.pag_importe) [Importe total]from EDUCA..CURSO Cjoin EDUCA..pago p on c.cur_id = p.cur_idgroup by cur_nombre;go
 
+-- Problema 4
+select E.idempleado, SUM(ISNULL(comision,0)+sueldo) "total"from RH..empleado Ejoin RH..departamento D on D.iddepartamento=E.iddepartamentogroup by E.idempleado;go
+
+
+-- Problema 5
+select ciudad, count(e.idempleado) [Cant. trabajadores]from empleado ejoin departamento d on e.iddepartamento=d.iddepartamentojoin ubicacion u on d.idubicacion=u.idubicaciongroup by ciudad;
+go
+
 
 
 
