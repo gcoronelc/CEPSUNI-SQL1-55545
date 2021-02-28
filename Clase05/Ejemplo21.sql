@@ -28,3 +28,14 @@ order by 1;
 go
 
 
+-- Problema 2
+select A.alu_nombre,sum(P.pag_importe) "Pagos"from EDUCA.. ALUMNO AJOIN EDUCA.. PAGO P on A.alu_id=P.alu_idgroup by A.alu_nombre;go
+
+
+-- Problema 3
+select C.cur_nombre, sum(P.pag_importe) [Importe total]from EDUCA..CURSO Cjoin EDUCA..pago p on c.cur_id = p.cur_idgroup by cur_nombre;go
+
+
+
+
+
