@@ -50,3 +50,28 @@ WHERE sueldo = (select min(sueldo) from rh..empleado);
 go
 
 
+-- GROUP BY
+
+SELECT 
+	iddepartamento,
+	count(1) empleados,
+	sum(sueldo) planilla
+FROM RH..EMPLEADO
+GROUP BY iddepartamento;
+go
+
+
+-- HAVING
+
+SELECT 
+	iddepartamento,
+	count(1) empleados,
+	sum(sueldo) planilla
+FROM RH..EMPLEADO
+GROUP BY iddepartamento
+HAVING count(1) >= 5;
+go
+
+
+
+
