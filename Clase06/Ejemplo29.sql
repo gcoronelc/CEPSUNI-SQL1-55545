@@ -191,3 +191,24 @@ GO
 SELECT * FROM rh..emp_conta;
 GO
 
+
+-- vistas
+
+create view dbo.v_1
+as
+select iddepartamento, min(sueldo) menor_sueldo
+from rh..empleado
+group by iddepartamento
+go
+
+
+create view dbo.v_2
+as
+select e.* 
+from rh..empleado e
+join rh..v_1 on e.iddepartamento = v_1.iddepartamento
+and e.sueldo = v_1.menor_sueldo;
+go
+
+select * from dbo.v_2;
+

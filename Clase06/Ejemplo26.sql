@@ -20,18 +20,34 @@ En una sola consulta combine los datos de los alumnos y profesores de la base de
 
 -- De Ivan Guerra para todos:  09:09 AM
 
-select 'alumno' categoria, alu_nombre "Nombre"from educa..ALUMNO unionselect 'profesor' cateria, cur_profesorfrom educa..CURSO;
+select 'alumno' categoria, alu_nombre "Nombre"
+from educa..ALUMNO 
+union
+select 'profesor' cateria, cur_profesor
+from educa..CURSO;
 go
 
 
 --De Lesly Liza para todos:  09:10 AM
 
-SELECT 'ALUMNO'  CATEGORIA, ALU_NOMBRE 'NOMBRE'FROM EDUCA..ALUMNOUNIONSELECT 'PROFESOR'  CATEGORIA, CUR_PROFESOR 'NOMBRE'FROM EDUCA..CURSO
+SELECT 'ALUMNO'  CATEGORIA, ALU_NOMBRE 'NOMBRE'
+FROM EDUCA..ALUMNO
+UNION
+SELECT 'PROFESOR'  CATEGORIA, CUR_PROFESOR 'NOMBRE'
+FROM EDUCA..CURSO
 go
 
 -- De Huayanay, Fabiola para todos:  09:12 AM
 
-select alu_id CODIGO,'ALUMNO' tipo , alu_nombre [NOMBRE COMPLETO] from EDUCA..ALUMNOUNIONselect cur_id, 'PROFESOR' tipo , 	case 		when cur_profesor is null then 'PENDIENTE'		when cur_profesor = '' then 'SE FUE'		else cur_profesor endfrom EDUCA..CURSO;
+select alu_id CODIGO,'ALUMNO' tipo , alu_nombre [NOMBRE COMPLETO] 
+from EDUCA..ALUMNO
+UNION
+select cur_id, 'PROFESOR' tipo , 
+	case 
+		when cur_profesor is null then 'PENDIENTE'
+		when cur_profesor = '' then 'SE FUE'
+		else cur_profesor end
+from EDUCA..CURSO;
 go
 
 
